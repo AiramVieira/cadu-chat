@@ -1,0 +1,36 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+}
+
+.user__info {
+  gap: 50px;
+  width: 400px;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user__info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.user__info input[type="text"]:focus {
+  scale: 1;
+}
+
+.user__info input[type="text"] {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  scale: .9;
+  transition: 200ms;
+}

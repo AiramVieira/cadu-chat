@@ -1,0 +1,83 @@
+.chats {
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 50px 20px;
+  justify-content: center;
+}
+
+@media (max-width: 478px) {
+  .chats {
+    gap: 20px;
+    padding: 20px 10px 20px;
+  }
+}
+
+.card {
+  scale: 0.9;
+  display: flex;
+  min-width: 30%;
+  cursor: pointer;
+  transition: 200ms;
+  border-radius: 15px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+@media (max-width: 699px) {
+  .card {
+    min-width: 45%;
+  }
+}
+@media (max-width: 350px) {
+  .card {
+    min-width: 100%;
+  }
+}
+
+.card:hover {
+  scale: 1;
+}
+
+.card > span {
+  padding: 15px;
+}
+
+.card > span:nth-child(1) {
+  width: 100%;
+}
+
+.card > span:nth-child(2) {
+  color: red;
+}
+
+.chatlist-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 150px;
+}
+
+.chatlist-container .new-chat:not(.active):hover {
+  scale: 1.2;
+}
+
+.new-chat {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  font-size: 26px;
+  transition: 300ms;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-chat.active {
+  width: 500px;
+  max-width: 100%;
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --dark: #222327;
+  --green: #29fd53;
+}
+
+.p-relative {
+  position: relative;
+}
